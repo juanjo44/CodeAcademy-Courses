@@ -4,6 +4,45 @@
     box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+}
 body{
-    background-color: hsla(158, 82%, 50%);
+    background-color: rgb(191, 235, 255);
+}
+
+main{
+    margin: 0 auto;
+}
+
+.tables{
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+
+.table{
+    width: 50vw;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-collapse: separate;
+    border: 1px solid rgb(76, 88, 151);
+}
+
+.table th{
+    text-align: center;
+    background-color: rgb(177, 226, 231);
+}
+
+.table td{
+    border-top: 1px solid rgb(83, 98, 213);
+}
+
+.table .table-title{
+    background-color: rgb(44, 121, 246) ;
+}
+
+p{
+    background-color: rgb(215, 222, 182);
 }
