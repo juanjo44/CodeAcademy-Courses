@@ -1,10 +1,10 @@
-.color-container{
+.container{
     border: 1px solid black;
     width: 80vw;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
-.color-container h2{
+.container h2{
     font-size: 30px;
     text-align: center;
 }
@@ -71,4 +71,32 @@
     color: #1CFE39;
     background-color: white;
     border: 1px solid #1CFE39;
+}
+
+.allFonts{
+    display: inline-block;
+    margin: 20px;
+}
+
+.allFonts h3{
+    text-align: center;
+}
+
+#raleway{
+    font-family: 'Raleway', sans-serif;
+}
+#karla{
+    font-family: 'Karla', sans-serif;
+}
+
+#kanit{
+    font-family: 'Kanit', sans-serif;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.italic-text{
+    font-style: italic;
 }
