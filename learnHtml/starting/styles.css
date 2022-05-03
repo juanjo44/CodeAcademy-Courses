@@ -1,0 +1,74 @@
+.color-container{
+    border: 1px solid black;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.color-container h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.allColor{
+    border-radius: 10px;
+    width: 20%;
+    display: inline-block;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+#firstColor{
+    background-color: #FEAE1C;
+}
+
+#firstColor:hover{
+    transition: background-color 1s,color 1s;
+    color: #FEAE1C;
+    background-color: white;
+    border: 1px solid #FEAE1C;
+}
+
+#secondColor{
+    background-color: #E63A32;
+}
+
+#secondColor:hover{
+    transition: background-color 1s,color 1s;
+    color: #E63A32;
+    background-color: white;
+    border: 1px solid #E63A32;
+}
+
+#thirdColor{
+    background-color: #8B28FC;
+}
+
+#thirdColor:hover{
+    transition: background-color 1s,color 1s;
+    color: #8B28FC;
+    background-color: white;
+    border: 1px solid #8B28FC;
+}
+
+#fourthColor{
+    background-color: #19A4E6;
+}
+
+#fourthColor:hover{
+    transition: background-color 1s,color 1s;
+    color: #19A4E6;
+    background-color: white;
+    border: 1px solid #19A4E6;
+}
+
+#fifthColor{
+    background-color: #1CFE39;
+}
+
+#fifthColor:hover{
+    transition: background-color 1s,color 1s;
+    color: #1CFE39;
+    background-color: white;
+    border: 1px solid #1CFE39;
+}
