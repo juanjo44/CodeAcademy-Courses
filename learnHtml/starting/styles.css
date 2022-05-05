@@ -2,6 +2,7 @@
     border: 1px solid black;
     width: 80vw;
     margin: 10px auto;
+    border-radius: 20px;
 }
 
 .container h2{
@@ -99,4 +100,27 @@
 
 .italic-text{
     font-style: italic;
+}
+
+.allStyles{
+    display: block;
+    margin: 20px;
+}
+
+#h1-style h1{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#h2-style h2{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+}
+#p-style p{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
 }
