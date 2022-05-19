@@ -26,9 +26,65 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Add your functions below:
 
 
+const validateCred = creditCard =>{
+    const size = creditCard.length;
+    let total = 0;
+    let indexFlag = 0;
+    for (let i = size-1; i >= 0; i--){
+        if (indexFlag === 0){
+            total += creditCard[i];
+            indexFlag = 1;
+        } else{
+            let double = creditCard[i] * 2;
+            if (double >= 10){
+                double -= 9;
+            }
+            total+= double
+            indexFlag = 0;
+        }
+    }
 
+    return total % 10 === 0;
+}
 
+const findInvalidCard = creditCards =>{
+    const invalids = [];
+    creditCards.forEach(ele => {
+        if(!validateCred(ele)){
+            invalids.push(ele);
+        }
+    })
+    return invalids;
+}
 
-
-
-
+const idInvalidCardCompanies = invalidCred => {
+    const companies = [];
+    invalidCred.forEach(ele => {
+        switch (ele[0]){
+            case 3:
+                if (companies.indexOf('Amex (American Express)') === -1){
+                    companies.push('Amex (American Express)');
+                }
+                break;
+            case 4:
+                if (companies.indexOf('Visa') === -1){
+                    companies.push('Visa');
+                }
+                break;
+            case 5:
+                if (companies.indexOf('Mastercard') === -1){
+                    companies.push('Mastercard');
+                }
+                break;
+            case 6:
+                if (companies.indexOf('Discovery') === -1){
+                    companies.push('Discovery');
+                }
+                break;
+            default:
+                console.log('Company not found');
+                break;
+        }
+    })
+    return companies;
+}
